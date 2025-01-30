@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -7,10 +7,179 @@
     <!-- Tailwind and DaisyUI CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Browse4Pets</title>
 </head>
-
+<header>
+    <nav class=" bg-[#FFF9F4] md:py-7 border-b border-[#11111127] md:border-0">
+        <div class="navbar w-11/12 mx-auto p-0">
+            <div class="navbar-start">
+              <a class="flex items-center gap-4 pl-0">
+                <img class="w-[47px] h-[47px]" src="assets/logo-header.png" alt="">
+                <span class=" text-2xl hidden md:inline">
+                    Browse<span class="text-[#FFDC26]">4</span>Pets
+                </span>
+              </a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li class="text-xl"><a>Find a pet</a></li>
+                <li class="text-xl"><a>Breeds</a></li>
+                <li class="text-xl"><a>Contact us</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+                <!-- indicator icon -->
+                <button class="btn btn-ghost hidden md:flex btn-circle">
+                    <div class="indicator">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                      </svg>
+                    </div>
+                </button>
+                <!-- Search icon -->
+                <button class="btn btn-ghost hidden md:flex btn-circle">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </button>
+                <a class="py-3 px-8 rounded-lg text-xl hidden md:flex ml-4 bg-[#FFF9F4] border border-[#FFDC26]">Login</a>
+                <a class="py-3 px-8 rounded-lg text-xl hidden md:flex ml-4 bg-[#FFDC26]">Register</a>
+              <!-- menu-bar -->
+                <div tabindex="0" role="button" class="btn btn-ghost md:hidden pr-0">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-8 w-8"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
+              </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Banner -->
+    <section>
+        
+    </section>
+</header>
+<main>
+    <!-- Categories section -->
+    <section class="w-11/12 mx-auto mt-14 md:mt-30">
+        <h2 class="text-2xl md:text-4xl mb-8">Browse By Categories</h2>
+        <!-- Card container -->
+         <div class="grid grid-cols-2 md:grid-cols-6 gap-4">
+            <!-- card -->
+            <div class="card bg-[#F9DF8A] pt-8 rounded-lg">
+                <figure >
+                 <div class=" w-[90px] h-[90px] md:w-[104px] md:h-[104px] bg-[#FFFFFF] rounded-full flex items-center justify-center">
+                    <img src="assets/dog-cartoon.png" 
+                    class="md:w-12 md:h-12 w-[42px] h-[42px]"
+                    >
+                 </div>
+                </figure>
+                <div class="card-body items-center text-center p-5">
+                  <h2 class="card-title text-xl">Dog</h2>
+                  <p>3 items</p>
+                </div>
+            </div>
+            <!-- card -->
+            <div class="card bg-[#F9DF8A] pt-8 rounded-lg">
+                <figure >
+                 <div class=" w-[90px] h-[90px] md:w-[104px] md:h-[104px] bg-[#FFFFFF] rounded-full flex items-center justify-center">
+                    <img src="assets/dog-cartoon.png" 
+                    class="md:w-12 md:h-12 w-[42px] h-[42px]"
+                    >
+                 </div>
+                </figure>
+                <div class="card-body items-center text-center p-5">
+                  <h2 class="card-title text-xl">Dog</h2>
+                  <p>3 items</p>
+                </div>
+            </div>
+            <!-- card -->
+            <div class="card bg-[#F9DF8A] pt-8 rounded-lg">
+                <figure >
+                 <div class=" w-[90px] h-[90px] md:w-[104px] md:h-[104px] bg-[#FFFFFF] rounded-full flex items-center justify-center">
+                    <img src="assets/dog-cartoon.png" 
+                    class="md:w-12 md:h-12 w-[42px] h-[42px]"
+                    >
+                 </div>
+                </figure>
+                <div class="card-body items-center text-center p-5">
+                  <h2 class="card-title text-xl">Dog</h2>
+                  <p>3 items</p>
+                </div>
+            </div>
+            <!-- card -->
+            <div class="card bg-[#F9DF8A] pt-8 rounded-lg">
+                <figure >
+                 <div class=" w-[90px] h-[90px] md:w-[104px] md:h-[104px] bg-[#FFFFFF] rounded-full flex items-center justify-center">
+                    <img src="assets/dog-cartoon.png" 
+                    class="md:w-12 md:h-12 w-[42px] h-[42px]"
+                    >
+                 </div>
+                </figure>
+                <div class="card-body items-center text-center p-5">
+                  <h2 class="card-title text-xl">Dog</h2>
+                  <p>3 items</p>
+                </div>
+            </div>
+            <!-- card -->
+            <div class="card bg-[#F9DF8A] pt-8 rounded-lg">
+                <figure >
+                 <div class=" w-[90px] h-[90px] md:w-[104px] md:h-[104px] bg-[#FFFFFF] rounded-full flex items-center justify-center">
+                    <img src="assets/dog-cartoon.png" 
+                    class="md:w-12 md:h-12 w-[42px] h-[42px]"
+                    >
+                 </div>
+                </figure>
+                <div class="card-body items-center text-center p-5">
+                  <h2 class="card-title text-xl">Dog</h2>
+                  <p>3 items</p>
+                </div>
+            </div>
+            <!-- card -->
+            <div class="card bg-[#F9DF8A] pt-8 rounded-lg">
+                <figure >
+                 <div class=" w-[90px] h-[90px] md:w-[104px] md:h-[104px] bg-[#FFFFFF] rounded-full flex items-center justify-center">
+                    <img src="assets/dog-cartoon.png" 
+                    class="md:w-12 md:h-12 w-[42px] h-[42px]"
+                    >
+                 </div>
+                </figure>
+                <div class="card-body items-center text-center p-5">
+                  <h2 class="card-title text-xl">Dog</h2>
+                  <p>3 items</p>
+                </div>
+            </div>
+         </div>
+    </section>
+</main>
 <body>
 
 </body>
