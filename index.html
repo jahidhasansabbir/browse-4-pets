@@ -87,13 +87,13 @@
                 furry friends. Shop now and make tails wag with joy!</p><br>
             <a class="py-3 px-8 rounded-lg md:text-xl bg-[#FFDC26]">Find a pet</a>
         </div>
-        <img class="-translate-y-[50%]" src="assets/cat-big.png" alt="">
+        <img class="-translate-y-[50%]  animate-pulse" src="assets/cat-big.png" alt="">
     </section>
 </header>
 <main>
     <!-- Categories section -->
     <section class="w-11/12 mx-auto xl:mt-16">
-        <h2 class="text-2xl md:text-4xl mb-8">Browse By Categories</h2>
+        <h2 class="text-2xl md:text-4xl mb-8 adlam">Browse By Categories</h2>
         <!-- Card container -->
         <div class="grid grid-cols-2 md:grid-cols-6 gap-4">
             <!-- card -->
@@ -392,9 +392,70 @@
         </div>
 
     </section>
+    <!-- Reviews-->
+    <section class="w-11/12 mx-auto mt-5 md:mt-14 space-y-7">
+        <h2 class="md:text-4xl text-[22px] adlam">What Our Customers Say</h2>
+        <!-- Card container -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- card-1 -->
+            <div class="card bg-base-100 border border-[#8080802f] rounded-lg">
+                <figure class="pt-6">
+                    <img src="assets/user-1.png" alt="Shoes" class="w-[150px]" />
+                </figure>
+                <div class="card-body">
+                    <p class="text-center text-gray-400">“This pet shop is amazing! My puppy loves the treats, and the staff is so helpful. Highly recommend!”</p>
+                    <div class="flex gap-1 justify-center items-center">
+                        <img class="w-[22px]" src="assets/star-solid.svg" alt="">
+                        <img class="w-[22px]" src="assets/star-solid.svg" alt="">
+                        <img class="w-[22px]" src="assets/star-solid.svg" alt="">
+                        <img class="w-[22px]" src="assets/star-solid.svg" alt="">
+                        <img class="w-[22px]" src="assets/star-half-stroke-solid.svg" alt="">
+                    </div>
+                    <h4 class="font-bold text-sm  text-center">Mike Johnson</h4>
+                    <h4 class="font-medium text-sm text-[#252b42ab] text-center">Pet Owner</h4>
+                </div>
+            </div>
+            <!-- card-2 -->
+            <div class="card bg-base-100 border border-[#8080802f] rounded-lg">
+                <figure class="pt-6">
+                    <img src="assets/user-2.png" alt="Shoes" class="w-[150px]" />
+                </figure>
+                <div class="card-body">
+                    <p class="text-center text-gray-400">“Great selection of cat products! My cat loves the new toys I bought. Fast delivery too!”</p>
+                    <div class="flex gap-1 justify-center items-center">
+                        <img class="w-[22px]" src="assets/star-solid.svg" alt="">
+                        <img class="w-[22px]" src="assets/star-solid.svg" alt="">
+                        <img class="w-[22px]" src="assets/star-solid.svg" alt="">
+                        <img class="w-[22px]" src="assets/star-solid.svg" alt="">
+                        <img class="w-[22px]" src="assets/star-half-stroke-solid.svg" alt="">
+                    </div>
+                    <h4 class="font-bold text-sm  text-center">Sophia Martinez</h4>
+                    <h4 class="font-medium text-sm text-[#252b42ab] text-center">Cat Lover</h4>
+                </div>
+            </div>
+            <!-- card-3 -->
+            <div class="card bg-base-100 border border-[#8080802f] rounded-lg">
+                <figure class="pt-6">
+                    <img src="assets/user-3.png" alt="Shoes" class="w-[150px]" />
+                </figure>
+                <div class="card-body">
+                    <p class="text-center text-gray-400">“The best place for bird food and accessories. My parrot is happy and healthy!”</p>
+                    <div class="flex gap-1 justify-center items-center">
+                        <img class="w-[22px]" src="assets/star-solid.svg" alt="">
+                        <img class="w-[22px]" src="assets/star-solid.svg" alt="">
+                        <img class="w-[22px]" src="assets/star-solid.svg" alt="">
+                        <img class="w-[22px]" src="assets/star-solid.svg" alt="">
+                        <img class="w-[22px]" src="assets/star-half-stroke-solid.svg" alt="">
+                    </div>
+                    <h4 class="font-bold text-sm  text-center">Emily Johnson</h4>
+                    <h4 class="font-medium text-sm text-[#252b42ab] text-center">Bird Enthusiast</h4>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Pawsome News -->
     <section
-        class="-mt-52 md:-mt-28 bg-[#FFF9F4] py-8 px-6 md:px-20 md:py-10 w-11/12 mx-auto rounded-2xl  md:gap-10  flex items-center flex-col md:flex-row translate-y-1/2">
+        class="-mt-60 md:-mt-32 bg-[#FFF9F4] py-8 px-6 md:px-20 md:py-10 w-11/12 mx-auto rounded-2xl  md:gap-10  flex items-center flex-col md:flex-row translate-y-1/2">
         <img src="assets/cute-pet-mid.png" alt="">
         <div class="space-y-4 md:text-left text-center adlam">
             <h2 class="md:text-4xl text-[22px]">Get Pawsome News!</h2>
@@ -412,7 +473,7 @@
         <nav class="sora max-w-[426px]">
             <a class="flex items-center gap-4 pl-0">
                 <img class="w-[47px] h-[47px]" src="assets/logo-footer.png" alt="">
-                <span class=" text-xl md:text-2xl hidden md:inline">
+                <span class=" text-xl md:text-2xl">
                     Browse<span class="text-[#FFDC26]">4</span>Pets
                 </span>
             </a>
